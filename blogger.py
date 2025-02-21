@@ -7,9 +7,9 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 
 load_dotenv()
-OPENAI_API_KEY=OPENAI_API_KEY
-UNSPLASH_ACCESS_KEY=UNSPLASH_ACCESS_KEY
-INSTAGRAM_USERNAME=INSTAGRAM_USERNAME
+OPENAI_API_KEY=os.environ.get("OPENAI_API_KEY")
+UNSPLASH_ACCESS_KEY=os.environ.get("UNSPLASH_ACCESS_KEY")
+INSTAGRAM_USERNAME=os.environ.get("INSTAGRAM_USERNAME")
 
 # fetch latest Instagram posts
 
